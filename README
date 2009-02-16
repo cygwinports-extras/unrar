@@ -1,0 +1,73 @@
+unrar
+-------------------------------------------
+Command-line RAR-format decompression program.
+
+Runtime requirements:
+  cygwin-1.5.25-15
+
+Build requirements:
+  cygwin-1.5.25-15
+  binutils-20080624-2
+  cygport-0.4.2-1
+  gcc-core-3.4.4-3
+  gcc-g++-3.4.4-3
+  make-3.81-1
+
+Canonical homepage:
+  http://www.rarlab.com/
+
+Canonical download:
+  http://www.rarlab.com/rar_add.htm
+
+-------------------------------------------
+
+Build instructions:
+  unpack unrar-3.8.5-1-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./unrar-3.8.5-1.cygport all
+
+This will create:
+  /usr/src/unrar-3.8.5-1-src.tar.bz2
+  /usr/src/unrar-3.8.5-1.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary distro:
+
+  /usr/bin/unrar.exe
+  /usr/share/doc/unrar-3.8.5/license.txt
+  /usr/share/doc/unrar-3.8.5/readme.txt
+
+------------------
+
+Port Notes:
+
+----- version 3.8.5-1 -----
+Version bump.
+
+----- version 3.7.8-1 -----
+Version bump.
+
+----- version 3.7.5-1 -----
+Version bump.
+
+----- version 3.7.3-1 -----
+Version bump.
+
+----- version 3.6.8-1 -----
+Version bump.
+
+----- version 3.6.3-1 -----
+Version bump.
+
+----- version 3.4.3-1 -----
+New upstream release.
+
+----- version 3.3.5-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/

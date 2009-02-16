@@ -1,0 +1,4 @@
+category: Archive Utils
+requires: cygwin
+sdesc: "RAR decompression utility"
+ldesc: "Command-line RAR-format decompression"
