@@ -6,14 +6,7 @@ SRC_DIR=${PN}
 src_compile() {
 	lndirs
 	cd ${B}
-	cygmake -f makefile.cygmin \
-		CXX="g++" \
-		CXXFLAGS="${CXXFLAGS} -Wno-deprecated" \
-		DEFINES="-D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DLITTLE_ENDIAN"
-}
-
-src_test() {
-	:
+	cygmake -f makefile.unix STRIP=:
 }
 
 src_install() {
