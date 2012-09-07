@@ -1,7 +1,11 @@
 # This package is NON-FREE and therefore incompatible with Cygwin's GPLv3+.
 # Therefore binaries cannot be redistributed for Cygwin without a buyout.
 
-DESCRIPTION="RAR archive decompressor"
+NAME="unrar"
+VERSION=4.2.4
+RELEASE=1
+CATEGORY="Archive"
+SUMMARY="RAR archive decompressor"
 HOMEPAGE="http://www.rarlab.com/"
 SRC_URI="http://www.rarlab.com/rar/unrarsrc-${PV}.tar.gz"
 SRC_DIR=${PN}
@@ -21,9 +25,9 @@ src_compile() {
 	# the executable and lib are built with the same sources but
 	# different preprocessor defines, so they must be built separately
 	cygmake clean
-	cygmake all
+	cygmake all CXXFLAGS="${CXXFLAGS}" STRIP=:
 	cygmake clean
-	cygmake lib LIBFLAGS=-DPIC
+	cygmake lib CXXFLAGS="${CXXFLAGS}" LIBFLAGS= STRIP=:
 }
 
 src_install() {
