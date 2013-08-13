@@ -1,5 +1,5 @@
---- origsrc/unrar/makefile.unix	2012-05-15 00:31:03.000000000 -0500
-+++ src/unrar/makefile.unix	2012-05-18 14:17:08.743560500 -0500
+--- origsrc/unrar/makefile	2012-05-15 00:31:03.000000000 -0500
++++ src/unrar/makefile	2012-05-18 14:17:08.743560500 -0500
 @@ -130,8 +130,8 @@ sfx:	clean $(OBJECTS)
  lib:	WHAT=RARDLL
  lib:	CXXFLAGS+=$(LIBFLAGS)
