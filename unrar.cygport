@@ -2,7 +2,7 @@
 # Therefore binaries cannot be redistributed for Cygwin without a buyout.
 
 NAME="unrar"
-VERSION=5.2.7
+VERSION=5.3.11
 RELEASE=1
 CATEGORY="Archive"
 SUMMARY="RAR archive decompressor"
