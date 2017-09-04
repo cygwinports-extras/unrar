@@ -2,15 +2,14 @@
 # included in the distribution.
 
 NAME="unrar"
-VERSION=5.4.5
+VERSION=5.5.8
 RELEASE=1
 CATEGORY="Archive"
 SUMMARY="RAR archive decompressor"
 HOMEPAGE="http://www.rarlab.com/rar_add.htm"
 SRC_URI="http://www.rarlab.com/rar/unrarsrc-${VERSION}.tar.gz"
 SRC_DIR=${NAME}
-
-PATCH_URI="4.2.2-makefile.patch"
+PATCH_URI="5.5.8-makefile.patch"
 
 PKG_NAMES="unrar libunrar libunrar-devel"
 unrar_CONTENTS="usr/bin/unrar.exe usr/share/doc/"
